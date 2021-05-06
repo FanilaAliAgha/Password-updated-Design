@@ -1,0 +1,52 @@
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/teal_700">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:id="@+id/upassword"
+        android:text="@string/updated"
+        app:fontFamily="serif"
+        android:textSize="38sp"
+        android:fontFamily="sans-serif-thin"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/black">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lock"
+        android:layout_below="@id/upassword"
+        android:layout_marginTop="70dp"
+        android:paddingStart="145dp"
+        android:drawableStart="@drawable/ic_baseline_lock_open_24"
+        />
+
+    <!--btn-->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/containedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@id/lock"
+        android:fontFamily="serif"
+        android:backgroundTint="@color/teal_200"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/login1"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/purple_700"
+        />
+
+</RelativeLayout>
